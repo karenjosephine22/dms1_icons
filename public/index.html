@@ -33,3 +33,9 @@
         <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
     </div>
 </body>
+
+<script>
+    const cir_variable = document.getElementById ('cir')
+    const cir_audio = new Audio ('sound/3knock.mp3')
+    cir_variable.onpointerdown = () => cir_audio.play ()
+</script>

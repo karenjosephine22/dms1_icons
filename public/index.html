@@ -16,26 +16,30 @@
 
 <body>
     <div class="row">
-        <div class="image-container"><img id= "moonblack@2x" src="img/moonblack@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id= "moonblack" src="img/moonblack@2x.png" height="200" width="200"/></div>
         <div class="image-container"><img id= "arrowblack@2x" src="img/arrowblack@2x.png" height="200" width="200"/></div>
         <div class="image-container"><img id= "treeblack@2x" src="img/treeblack@2x.png" height="200" width="200"/></div>
     </div>
 
     <div class="row">
-        <div class="image-container"><img id= "horseblack@2x" src="img/horseblack@2x.png" height="200" width="200"/></div>
-        <div class="image-container"><img id= "koiblack@2x" src="img/koiblack@2x.png" height="200" width="200"/></div>
-        <div class="image-container"><img id= "lotusblack@2x" src="img/lotusblack@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id= "horseblack" src="img/horseblack@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id= "koiblack" src="img/koiblack@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id= "lotusblack" src="img/lotusblack@2x.png" height="200" width="200"/></div>
         </div>
 
     <div class="row">
-        <div class="image-container"><img id= "butterflyblack@2x" src="img/butterflyblack@2x.png" height="200" width="200"/></div>
-        <div class="image-container"><img id= "acornblack@2x" src="img/acornblack@2x.png" height="200" width="200"/></div>
-        <div class="image-container"><img id= "hyacinthblack@2x" src="img/hyacinthblack@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id= "butterflyblack" src="img/butterflyblack@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id= "acornblack" src="img/acornblack@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id= "hyacinthblack" src="img/hyacinthblack@2x.png" height="200" width="200"/></div>
     </div>
 </body>
 
 <script>
-    const moonblack_variable = document.getElementById ('moonblack@2x')
+    const moonblack_variable = document.getElementById ('moonblack_id')
     const moonblack_audio = new Audio ('sound/sun.mp3')
     moonblack_variable.onpointerdown = () => moonblack_audio.play ()
+
+    const arrowblack_variable = document.getElementById ('arrowblack_id')
+    const arrowblack_audio = new Audio ('sound/arrow.mp3')
+    arrowblack_variable.onpointerdown = () => arrowblack_audio.play ()
 </script>

@@ -35,18 +35,7 @@
 </body>
 
 <script>
-    const moonblack_variable = document.getElementById ('moonblack_id')
-    const moonblack_audio = new Audio ('sound/sun.mp3')
-    moonblack_variable.onpointerdown = () => moonblack_audio.play ()
-
-    const arrowblack_variable = document.getElementById ('arrowblack_id')
-    const arrowblack_audio = new Audio ('sound/arrow.mp3')
-    arrowblack_variable.onpointerdown = () => arrowblack_audio.play ()
-
-</script>
-
-<script>
-    const moonblack = document.getElementById ('moonblack_id')
+    const moonblack = document.getElementById ('moonblack')
     const moonblack_audio = new Audio ('sounds/sun.mp3')
     moonblack.onpointerdown = () => {
         moonblack_audio.play ()
@@ -54,10 +43,13 @@
         setTimeout (() => moonblack.src = 'img/moonblack.png', 1000)
     }
 
-    const tri = document.getElementById ('tri_id')
-    const tri_audio = new Audio ('sounds/2.mp3')
-    tri.onpointerdown = () => tri_audio.play ()
-    tri.onpointerover = () => tri.src = 'img/squ.png'
-    tri.onpointerout = () => tri.src = 'img/tri.png'
+    const arrowblack = document.getElementById ('arrowblack')
+    const arrowblack_audio = new Audio ('sounds/arrow.mp3')
+    arrowblack.onpointerdown = () => {
+        arrowblack_audio.play ()
+        arrowblack.src = 'img/arrowcolor.png'
+        setTimeout (() => arrowblack.src = 'img/arrowblack.png', 1000)
+    }
+    
 
 </script>

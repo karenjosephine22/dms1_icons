@@ -16,7 +16,7 @@
 
 <body>
     <div class="row">
-        <div class="image-container"><img id= "moonblack" src="img/moonblack@2x.png" height="200" width="200"/></div>
+        <div class="image-container"><img id= "moonblack@2x" src="img/moonblack@2x.png" height="200" width="200"/></div>
         <div class="image-container"><img id= "arrowblack@2x" src="img/arrowblack@2x.png" height="200" width="200"/></div>
         <div class="image-container"><img id= "treeblack@2x" src="img/treeblack@2x.png" height="200" width="200"/></div>
     </div>
@@ -35,11 +35,7 @@
 </body>
 
 <script>
-    const moonblack_variable = document.getElementById ('moonblack_id')
+    const moonblack_variable = document.getElementById ('moonblack@2x_id')
     const moonblack_audio = new Audio ('sound/sun.mp3')
-    moonblack_variable.onpointerdown = () => moonblack_audio.play ()
-
-    const arrowblack_variable = document.getElementById ('arrowblack_id')
-    const arrowblack_audio = new Audio ('sound/arrow.mp3')
-    arrowblack_variable.onpointerdown = () => arrowblack_audio.play ()
+    moonblack_variable.onpointerdown = () => moonblack@2x_audio.play ()
 </script>
